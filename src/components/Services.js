@@ -11,8 +11,8 @@ import { NavLink } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    display: 'centre',
-    textAlign: 'centre',
+    minWidth:'500px',
+    padding: '50px'
   },
   paper: {
     padding: theme.spacing(2),
@@ -27,36 +27,36 @@ export default function Services() {
   return (
     <div className={classes.root}>
       <h1 className='services'>Our Services</h1>
-      <NavLink to='/contactProject'className='sName'>
+      <NavLink to='/contactProject' className='sName'>
         <Grid container spacing={3}>
-          <Grid item xs={4}>
+          <Grid item xs={4} sm={4}>
             <Paper className={classes.paper} elevation={3}>
-              <h3>Website Development</h3>
+              <h3 className='serName'>Website Development</h3>
               <img src={websites} alt='' height='200px' width='200px' />
             </Paper>
           </Grid>
 
           <Grid item xs={4}>
             <Paper className={classes.paper} elevation={3}>
-              <h3>Mobile Application Development</h3>
+              <h3 className='serName'>Mobile Application Development</h3>
               <img src={mobile} alt='' height='200px' width='200px' />
             </Paper>
-
+<br />
           </Grid><Grid item xs={4}>
             <Paper className={classes.paper} elevation={3}>
-              <h3>webshops</h3>
+              <h3 className='serName'>webshops</h3>
               <img src={webshops} alt='' height='200px' width='200px' />
             </Paper>
           </Grid>
 
           <Grid item xs={4}>
             <Paper className={classes.paper} elevations={3}>
-              <h3>Digital Marketing</h3>
+              <h3 className='serName'>Digital Marketing</h3>
               <img src={digital} alt='' height='200px' width='200px' />
             </Paper>
           </Grid>
         </Grid>
       </NavLink>
     </div>
- );
+  );
 }

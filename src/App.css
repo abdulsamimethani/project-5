@@ -1,8 +1,10 @@
 .homePage {
     display: flex;
-    padding: 60px;
+    padding: 80px 0 0;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    min-width: 500px;
 }
 
 .brand {
@@ -17,6 +19,8 @@
 .aboutPage {
     display: flex;
     padding: 60px;
+    background-color: white;
+    min-width: 500px;
 }
 
 .contactPage {
@@ -24,6 +28,8 @@
     justify-content: center;
     align-items: center;
     padding: 60px;
+    background-color: white;
+    min-width: 500px;
 }
 
 .menu {
@@ -32,17 +38,23 @@
 
 .menuItem {
     text-decoration: none;
-    color: white;
-    margin: auto;
-    padding: 7px;
+    color: darkblue;
 }
 
 .services {
     display: flex;
     justify-content: center;
-
 }
 
 .sName {
     text-decoration: none;
+}
+
+.serName {
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    background-color: white;
 }

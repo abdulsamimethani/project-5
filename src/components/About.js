@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(1),
       textdecoration: 'none'
+      
     },
   },
 }))
@@ -24,14 +25,14 @@ export default function About() {
           <br />
         Our talented professionals specialize in Websites,Webshops,Mobile applications and Digital Marketing. Every solution we offer is always based on our customer’s needs. The end result is comparable to a tailor-made suit that fits you perfectly – it’s comfortable, exudes professionalism and catches the eye.
         </h3>
-        <Button className={classes} variant="contained" color="primary" className='link'>
-          <NavLink to='/contact' className='link'>
+        <NavLink to='/contact' className='link'>
+          <Button className={classes.root} variant="contained" color="primary">
             Contact Us
-            </NavLink>
         </Button>
+        </NavLink>
       </div>
       <div>
-      <img src={Portfolio1} height='350px' width='400px' alt='' />
+        <img src={Portfolio1} height='350px' width='400px' alt='' />
       </div>
     </div>
   )

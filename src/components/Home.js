@@ -20,15 +20,16 @@ export default function Home() {
 
       <div>
         <h2>Grow your business with <strong className="brand" > <br />Tech Shake</strong>.</h2>
-        <p>We are the team of Talented Developers making websites and<br /> mobile application.</p>
-        <Button className={classes} variant="contained" color="primary" className='link'>
-          <NavLink to='/services' className='link'>
+        <p>We are the team of Talented Developers making websites and<br /> mobile applications.</p>
+        <NavLink to='/services' className='link'>
+        <Button className={classes.root} variant="contained" color="primary" >
             Get Started
-            </NavLink>
+            
         </Button>
+        </NavLink>
       </div>
       <div>
-        <img src={Portfolio} height='350px' width='400px' alt='' id='homePic' />
+        <img src={Portfolio} height='350px' width='400px' alt=''/>
       </div>
     </div>
   )
